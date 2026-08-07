@@ -197,7 +197,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
         <div>
           <div class="blabel">Economico</div>
           <div class="bitem"><div class="bdot"></div><div class="btext">10% facturacion neta del equipo</div></div>
-          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $50 si el equipo supera $3.500 ese mes</div></div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $50 si el equipo supera $3.500 netos ese mes</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">$20 extras si un Iron factura +$500 en sus primeros 30 dias</div></div>
         </div>
         <div>
@@ -232,7 +232,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
         <div>
           <div class="blabel">Economico</div>
           <div class="bitem"><div class="bdot"></div><div class="btext">10% facturacion neta del equipo</div></div>
-          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $150 si el equipo supera $8.000 ese mes</div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $150 si el equipo supera $8.000 netos ese mes</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">Bono $50 adicional si retiene el 80% de vendedores ese mes</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">$30 extras si un Iron factura +$500 en sus primeros 30 dias</div></div>
         </div>
@@ -269,7 +269,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
         <div>
           <div class="blabel">Economico</div>
           <div class="bitem"><div class="bdot"></div><div class="btext">10% facturacion neta del equipo</div></div>
-          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $400 si el equipo supera $15.000 ese mes</div></div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $400 si el equipo supera $15.000 netos ese mes</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">$50 extras si un Iron factura +$1.000 en sus primeros 30 dias</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">3% sobre facturacion de sub-lideres y sub-equipos</div></div>
         </div>
@@ -307,7 +307,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
           <div class="blabel">Economico</div>
           <div class="bitem"><div class="bdot"></div><div class="btext">10% de su equipo directo</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">3% sobre facturacion de cada sub-equipo</div></div>
-          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $700 si su estructura total supera $30.000</div></div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $700 si su estructura total supera $30.000 netos</div></div>
         </div>
         <div>
           <div class="blabel">Expansion</div>
@@ -496,6 +496,14 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
 <!-- REGLAS -->
 <div id="panel-reglas" class="panel">
   <div class="sl">Reglas del sistema</div>
+  <div class="rule green">
+    <div class="rule-title">Los bonos se cobran todos los meses que se cumpla el umbral</div>
+    <div class="rule-body">No son pago unico. Si el equipo supera el umbral de facturacion neta de su categoria, el bono se paga ese mes. Si el mes siguiente no lo supera, no se paga. Se gana cada mes, no se conserva.</div>
+  </div>
+  <div class="rule green">
+    <div class="rule-title">Todos los umbrales de bono son sobre facturacion NETA</div>
+    <div class="rule-body">Neta = facturacion bruta del equipo menos gastos operativos (pasarelas y servicios con costo). El bruto no se usa para nada: ni para el 10%, ni para los bonos, ni para definir la categoria.</div>
+  </div>
   <div class="rule green">
     <div class="rule-title">El rango se calcula por promedio historico</div>
     <div class="rule-body">Un mes malo no baja el rango. Para subir, tiene que cumplir TODOS los requisitos del siguiente nivel por 2 meses consecutivos (3 para Elite).</div>
