@@ -198,7 +198,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
           <div class="blabel">Economico</div>
           <div class="bitem"><div class="bdot"></div><div class="btext">10% facturacion neta del equipo</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">Bono $50 si el equipo supera $4.250 netos ese mes</div></div>
-          <div class="bitem"><div class="bdot"></div><div class="btext">$20 extras si un Iron factura +$500 en sus primeros 30 dias</div></div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">$20 por cada 2 Iron nuevos que facturen +$500 en sus primeros 30 dias</div></div>
         </div>
         <div>
           <div class="blabel">Recursos</div>
@@ -234,7 +234,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
           <div class="bitem"><div class="bdot"></div><div class="btext">10% facturacion neta del equipo</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">Bono $150 si el equipo supera $10.200 netos ese mes</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">Bono $50 adicional si retiene el 80% de vendedores ese mes</div></div>
-          <div class="bitem"><div class="bdot"></div><div class="btext">$30 extras si un Iron factura +$500 en sus primeros 30 dias</div></div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">$30 por cada 2 Iron nuevos que facturen +$500 en sus primeros 30 dias</div></div>
         </div>
         <div>
           <div class="blabel">Recursos y status</div>
@@ -270,7 +270,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
           <div class="blabel">Economico</div>
           <div class="bitem"><div class="bdot"></div><div class="btext">10% facturacion neta del equipo</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">Bono $400 si el equipo supera $21.250 netos ese mes</div></div>
-          <div class="bitem"><div class="bdot"></div><div class="btext">$50 extras si un Iron factura +$1.000 en sus primeros 30 dias</div></div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">$50 por cada 2 Iron nuevos que facturen +$1.000 en sus primeros 30 dias</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">3% sobre facturacion de sub-lideres y sub-equipos</div></div>
         </div>
         <div>
@@ -308,6 +308,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
           <div class="bitem"><div class="bdot"></div><div class="btext">10% de su equipo directo</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">3% sobre facturacion de cada sub-equipo</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">Bono $700 si su estructura total supera $30.000 netos</div></div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">$50 por cada 2 Iron nuevos que facturen +$1.000 en sus primeros 30 dias</div></div>
         </div>
         <div>
           <div class="blabel">Expansion</div>
@@ -508,6 +509,10 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
     <div class="rule-title">Los bonos de lider requieren que BBI supere $30.000 ese mes</div>
     <div class="rule-body">Igual que los 4 premios mensuales, los bonos de facturacion de lider se activan solo si la facturacion total de BBI supera los $30.000 USD en el mes. Si el mes fue flojo para la empresa, no salen bonos aunque un equipo haya cumplido su umbral. El 10% base y el 3% de sub-equipos no se ven afectados nunca.</div>
   </div>
+  <div class="rule blue">
+    <div class="rule-title">El bono de Iron se paga de a pares</div>
+    <div class="rule-body">No alcanza con que un Iron nuevo cumpla: hacen falta 2 dentro del mismo mes, cada uno superando el umbral de su categoria en sus primeros 30 dias. Se paga por cada par completo: 2 Iron = 1 bono, 4 Iron = 2 bonos. Un Iron suelto no paga y no queda acumulado para el mes siguiente.</div>
+  </div>
   <div class="rule gray">
     <div class="rule-title">Un solo bono de facturacion por lider por mes</div>
     <div class="rule-body">Cada lider cobra unicamente el bono de la categoria en la que esta. No se acumulan con los de categorias anteriores. El bono de retencion de Plata si es adicional al de facturacion.</div>
@@ -557,7 +562,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
       <tr><td>% base equipo</td><td>10%</td><td>10%</td><td>10%</td><td>10%</td></tr>
       <tr><td>Bono hito facturacion</td><td class="cp">$50 si &gt;$4,25k</td><td class="cp">$150 si &gt;$10,2k</td><td class="ck">$400 si &gt;$21,25k</td><td class="ck">$700 si &gt;$30k</td></tr>
       <tr><td>Bono retencion</td><td class="cx">-</td><td class="cp">$50 si 80%+</td><td class="cx">-</td><td class="cx">-</td></tr>
-      <tr><td>Bono Iron reclutado</td><td class="cp">$20 Iron +$500</td><td class="cp">$30 Iron +$500</td><td class="ck">$50 Iron +$1k</td><td class="ck">$50 Iron +$1k</td></tr>
+      <tr><td>Bono Iron reclutado</td><td class="cp">$20 c/2 Iron +$500</td><td class="cp">$30 c/2 Iron +$500</td><td class="ck">$50 c/2 Iron +$1k</td><td class="ck">$50 c/2 Iron +$1k</td></tr>
       <tr><td>% sobre sub-equipos</td><td class="cx">-</td><td class="cx">-</td><td class="ck">3%</td><td class="ck">3%</td></tr>
       <tr><td>Cuentas Instagram</td><td>Sin limite</td><td>Sin limite</td><td>Sin limite</td><td>Sin limite</td></tr>
       <tr><td>Reunion con Guille</td><td class="cx">-</td><td class="cp">Mensual</td><td class="cp">Directa WA</td><td class="ck">1 a 1 mensual</td></tr>
