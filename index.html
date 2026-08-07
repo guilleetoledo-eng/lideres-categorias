@@ -197,7 +197,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
         <div>
           <div class="blabel">Economico</div>
           <div class="bitem"><div class="bdot"></div><div class="btext">10% facturacion neta del equipo</div></div>
-          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $50 si el equipo supera $3.500 netos ese mes</div></div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $50 si el equipo supera $4.250 netos ese mes</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">$20 extras si un Iron factura +$500 en sus primeros 30 dias</div></div>
         </div>
         <div>
@@ -232,7 +232,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
         <div>
           <div class="blabel">Economico</div>
           <div class="bitem"><div class="bdot"></div><div class="btext">10% facturacion neta del equipo</div></div>
-          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $150 si el equipo supera $8.000 netos ese mes</div></div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $150 si el equipo supera $10.200 netos ese mes</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">Bono $50 adicional si retiene el 80% de vendedores ese mes</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">$30 extras si un Iron factura +$500 en sus primeros 30 dias</div></div>
         </div>
@@ -269,7 +269,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
         <div>
           <div class="blabel">Economico</div>
           <div class="bitem"><div class="bdot"></div><div class="btext">10% facturacion neta del equipo</div></div>
-          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $400 si el equipo supera $15.000 netos ese mes</div></div>
+          <div class="bitem"><div class="bdot"></div><div class="btext">Bono $400 si el equipo supera $21.250 netos ese mes</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">$50 extras si un Iron factura +$1.000 en sus primeros 30 dias</div></div>
           <div class="bitem"><div class="bdot"></div><div class="btext">3% sobre facturacion de sub-lideres y sub-equipos</div></div>
         </div>
@@ -380,7 +380,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
 <!-- BONOS -->
 <div id="panel-bonos" class="panel">
   <div class="sl">Bonos mensuales — 4 premios</div>
-  <div class="alert orange"><strong>Los bonos se activan solo si BBI supera $30.000 USD de facturacion total ese mes.</strong></div>
+  <div class="alert orange"><strong>Los bonos se activan solo si BBI supera $30.000 USD de facturacion total ese mes.</strong> Aplica tanto a estos 4 premios como a los bonos de facturacion de cada categoria.</div>
   <div class="bonos-grid">
     <div class="bono">
       <div class="bono-num">01</div>
@@ -500,6 +500,18 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
     <div class="rule-title">Los bonos se cobran todos los meses que se cumpla el umbral</div>
     <div class="rule-body">No son pago unico. Si el equipo supera el umbral de facturacion neta de su categoria, el bono se paga ese mes. Si el mes siguiente no lo supera, no se paga. Se gana cada mes, no se conserva.</div>
   </div>
+  <div class="rule orange">
+    <div class="rule-title">El umbral del bono es el 85% del techo de la categoria</div>
+    <div class="rule-body">El bono no se cobra por estar comodo adentro de la categoria: se cobra cuando estas a un 15% de ascender a la siguiente. Bronce dispara en $4.250 · Plata en $10.200 · Oro en $21.250 · Elite en $30.000. Si cobras el bono, estas cerca de subir.</div>
+  </div>
+  <div class="rule orange">
+    <div class="rule-title">Los bonos de lider requieren que BBI supere $30.000 ese mes</div>
+    <div class="rule-body">Igual que los 4 premios mensuales, los bonos de facturacion de lider se activan solo si la facturacion total de BBI supera los $30.000 USD en el mes. Si el mes fue flojo para la empresa, no salen bonos aunque un equipo haya cumplido su umbral. El 10% base y el 3% de sub-equipos no se ven afectados nunca.</div>
+  </div>
+  <div class="rule gray">
+    <div class="rule-title">Un solo bono de facturacion por lider por mes</div>
+    <div class="rule-body">Cada lider cobra unicamente el bono de la categoria en la que esta. No se acumulan con los de categorias anteriores. El bono de retencion de Plata si es adicional al de facturacion.</div>
+  </div>
   <div class="rule green">
     <div class="rule-title">Todos los umbrales de bono son sobre facturacion NETA</div>
     <div class="rule-body">Neta = facturacion bruta del equipo menos gastos operativos (pasarelas y servicios con costo). El bruto no se usa para nada: ni para el 10%, ni para los bonos, ni para definir la categoria.</div>
@@ -543,7 +555,7 @@ body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#FFF;min-height:100
         <th style="color:#1D9E75">👑 Elite</th>
       </tr>
       <tr><td>% base equipo</td><td>10%</td><td>10%</td><td>10%</td><td>10%</td></tr>
-      <tr><td>Bono hito facturacion</td><td class="cp">$50 si &gt;$3,5k</td><td class="cp">$150 si &gt;$8k</td><td class="ck">$400 si &gt;$15k</td><td class="ck">$700 si &gt;$30k</td></tr>
+      <tr><td>Bono hito facturacion</td><td class="cp">$50 si &gt;$4,25k</td><td class="cp">$150 si &gt;$10,2k</td><td class="ck">$400 si &gt;$21,25k</td><td class="ck">$700 si &gt;$30k</td></tr>
       <tr><td>Bono retencion</td><td class="cx">-</td><td class="cp">$50 si 80%+</td><td class="cx">-</td><td class="cx">-</td></tr>
       <tr><td>Bono Iron reclutado</td><td class="cp">$20 Iron +$500</td><td class="cp">$30 Iron +$500</td><td class="ck">$50 Iron +$1k</td><td class="ck">$50 Iron +$1k</td></tr>
       <tr><td>% sobre sub-equipos</td><td class="cx">-</td><td class="cx">-</td><td class="ck">3%</td><td class="ck">3%</td></tr>
